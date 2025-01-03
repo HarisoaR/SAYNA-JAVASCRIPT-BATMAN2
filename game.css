@@ -29,11 +29,14 @@ html{
     --gradient-red:#890008;
     --gray:#C4C4C4;
     --input-color:#BCBBBD;
+    
 
 
   }
   .up-border{
-    border-top: 3px solid var(--input-color);
+    border-top: 3px solid transparent;
+    border-image-source: linear-gradient(90deg, rgba(255, 255, 255, 0.15) 83.13%, rgba(255, 255, 255, 0) 106.54%);
+    border-image-slice: 1; 
     position: relative;
     width: 86%;
     top: 132px;
@@ -41,7 +44,9 @@ html{
     margin: 0 auto;
   }
   .left-border{
-    border-top: 3px solid var(--input-color);
+    border-top: 3px solid transparent;
+    border-image-source: linear-gradient(90deg, rgba(255, 255, 255, 0.15) 83.13%, rgba(255, 255, 255, 0) 106.54%);
+    border-image-slice: 1; 
     position: fixed ;
     transform: rotate(90deg);
     width: 100%;
@@ -49,7 +54,9 @@ html{
     left: -43%;
   }
   .right-border{
-    border-top: 3px solid var(--input-color);
+    border-top: 3px solid transparent;
+    border-image-source: linear-gradient(90deg, rgba(255, 255, 255, 0.15) 83.13%, rgba(255, 255, 255, 0) 106.54%);
+    border-image-slice: 1; 
     position: fixed;
     transform: rotate(90deg);
     width: 100%;
@@ -110,6 +117,8 @@ nav{
   align-items: center;
   justify-content: space-between;
   padding:30px 0;
+  margin: 0 auto;
+  width: 80%;
 
 }
 ul{
@@ -220,4 +229,58 @@ h2 {
   max-width: 100%;
   height: auto;
   margin-top: 50px;
+}
+
+/* Bouton */
+.btn{
+  display: inline-block;
+  width: 342px;
+  height: 64px;
+  margin-top: 103px;
+  padding: 19px 82px;
+  line-height: 25px ;
+  text-align: center;
+  text-decoration: none;
+  color: var(--white-color);
+  font-family: 'Rajdhani';
+  font-size: 20px;
+  background: linear-gradient(273.81deg, #C06F28 0%, rgba(252, 232, 216, 0.4) 100%);
+}
+.btn:hover{
+  background: linear-gradient(273.81deg, #890008 0%, #FCE8D8 100%);
+
+}
+/* design footer */
+footer{
+  margin-top: 209px;
+}
+footer .text-footer{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.text-footer p{
+  font-size: 10px;
+  font-family:'Space-Grotesk',sans-serif ;
+}
+
+footer .logos-footer{
+  margin-top: 34px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.logos-footer .logo-sayna{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+ footer .social-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-left:42px ;
+
 }
