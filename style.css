@@ -33,7 +33,9 @@ html{
 
   }
   .up-border{
-    border-top: 3px solid var(--input-color);
+    border-top: 3px solid transparent;
+    border-image-source: linear-gradient(90deg, rgba(255, 255, 255, 0.15) 83.13%, rgba(255, 255, 255, 0) 106.54%);
+    border-image-slice: 1; 
     position: relative;
     width: 86%;
     top: 132px;
@@ -41,7 +43,9 @@ html{
     margin: 0 auto;
   }
   .left-border{
-    border-top: 3px solid var(--input-color);
+    border-top: 3px solid transparent;
+    border-image-source: linear-gradient(90deg, rgba(255, 255, 255, 0.15) 83.13%, rgba(255, 255, 255, 0) 106.54%);
+    border-image-slice: 1; 
     position: fixed ;
     transform: rotate(90deg);
     width: 100%;
@@ -49,7 +53,9 @@ html{
     left: -43%;
   }
   .right-border{
-    border-top: 3px solid var(--input-color);
+    border-top: 3px solid transparent;
+    border-image-source: linear-gradient(90deg, rgba(255, 255, 255, 0.15) 83.13%, rgba(255, 255, 255, 0) 106.54%);
+    border-image-slice: 1; 
     position: fixed;
     transform: rotate(90deg);
     width: 100%;
@@ -114,6 +120,8 @@ nav{
 }
 ul{
   list-style: none;
+  display: flex;
+  gap: 42px;
 
 }
 
@@ -204,18 +212,31 @@ box-shadow: var(--black-color) 5px 5px 60px;
   flex-direction: column;
   align-items: center;
   position: fixed;
-  right: 50px;
   top: 300px;
+  right: 3.5%;
+  z-index: 999; 
 }
 .scroll .social-media{
 margin-top: 32px;
 }
+
 .scroll .social{
   display: flex;
   flex-direction: column;
   margin: 32px 0 32px 0;
 }
 
+@media only screen and (min-width: 1024px){
+  .scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 300px;
+    right:4.5%;
+   
+  }
+}
 
 
 /* Design de Batman au ciné */
@@ -262,7 +283,7 @@ figcaption{
 #Justice-league{
   margin-top: 150px;
 }
-#Justice-league  .allies{
+#Justice-le.ague  .allies{
   margin: 0 0 0 100px;
 }
 
